@@ -20,7 +20,13 @@ func main() {
         }
 
         cmdString = strings.TrimSuffix(cmdString, "\n")
-        cmd := exec.Command(cmdString)
+
+        if cmdString == "exit" {
+            return
+        }
+
+        cmdComponents := strings.Fields(cmdString)
+        cmd := exec.Command(cmdComponents[0], cmdComponents[1:]...)
         cmd.Stderr = os.Stderr
         cmd.Stdout = os.Stdout
         cmd.Run()
