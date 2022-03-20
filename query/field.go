@@ -1,4 +1,4 @@
-package main
+package query
 
 type Field struct {
     name string
@@ -9,4 +9,7 @@ type FieldType string
 const (
 	INT = "INT"
 	STRING = "STRING"
+	DATE = "DATE"
+	DATETIME = ""
+	BOOL = ""
 )

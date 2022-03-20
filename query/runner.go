@@ -1,10 +1,10 @@
-package main
+package query
 
 import (
     "fmt"
     "strings"
     "os"
-    "golumnar/filesystem"
+    "github.com/OlivierKessler01/golumnar/filesystem"
 )
 
 /**
