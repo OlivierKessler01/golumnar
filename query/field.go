@@ -1,10 +1,5 @@
 package query
 
-type Field struct {
-    name string
-    field_type Fieldtype
-}
-
 type FieldType string
 const (
 	INT = "INT"
@@ -13,3 +8,9 @@ const (
 	DATETIME = ""
 	BOOL = ""
 )
+
+type Field struct {
+    name string
+    field_type FieldType
+}
+
